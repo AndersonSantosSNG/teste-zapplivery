@@ -64,7 +64,7 @@ body.fc, body.fc button, body.fc input, body.fc select, body.fc textarea { font-
 .fc-page-hero h1 { font-size: clamp(42px, 5.5vw, 76px); line-height: 1.02; }
 .fc-process { gap: 16px; }
 .fc-process article { min-height: 330px; padding: 30px; border-radius: 12px; }
-.fc-contact { grid-template-columns: 1fr 1fr; }
+.fc-contact { grid-template-columns: 0.75fr 1fr; }
 .fc-photo { min-height: 780px; }
 .fc-form { padding: 70px max(40px, calc((50vw - 590px) + 40px)); }
 .footer-shell { padding-inline: max(24px, calc((100vw - 1180px) / 2)); }
@@ -76,8 +76,9 @@ body.fc, body.fc button, body.fc input, body.fc select, body.fc textarea { font-
   }
   .fc-contact .fc-form h2 {
     margin-bottom: 0;
-    font-size: clamp(30px, 2.6vw, 36px);
-    line-height: 1.05;
+    font-size: clamp(30px, 2.7vw, 37px);
+    line-height: 1;
+    letter-spacing: -0.05em;
   }
   .fc-contact .fc-form > p {
     margin: 0;
@@ -188,6 +189,148 @@ html::-webkit-scrollbar-thumb:hover {
 body.fc {
   background: var(--fc-palette-bg);
   color: var(--fc-palette-navy);
+  line-height: 1.5;
+}
+
+.fc-nav {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fc h1,
+.fc-page-hero h1,
+.fc-hero h1 {
+  font-size: clamp(42px, 5.6vw, 64px);
+  font-weight: 700;
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+}
+
+.fc h2,
+.fc .fc-system-copy h2,
+.fc .fc-cta-band h2 {
+  font-size: clamp(34px, 3.66vw, 50px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.fc h3,
+.fc-grid-4 h3,
+.fc-card h3,
+.fc-process h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.fc-kicker {
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+}
+
+.fc-lead,
+.fc-copy {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.fc-photo-copy > p:last-child {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.fc-hero .fc-lead {
+  line-height: 1.65;
+}
+
+.fc-form > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.fc-form label,
+.fc-form input,
+.fc-form select,
+.fc-form textarea {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.fc-form .consent,
+.fc-form .consent input {
+  font-weight: 500;
+}
+
+.fc-grid-4 p,
+.fc-card p,
+.fc-process article p,
+.fc-process li {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.fc-card small,
+.fc-grid-4 article > span,
+.fc-process span {
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.fc-cta,
+.fc-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.fc-link,
+.fc-system-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+body.fc a.fc-back-link,
+body.fc a.fc-help-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+body.fc a.fc-back-link {
+  margin-bottom: 20px;
+  color: var(--fc-palette-blue);
+}
+
+body.fc a.fc-help-link {
+  color: var(--fc-palette-pink);
+  font-weight: 800;
+}
+
+.fc-form-links {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+body.fc .fc-form-links .fc-back-link {
+  margin-bottom: 0;
+}
+
+body.fc .fc-form-links .fc-help-link {
+  flex: 0 0 auto;
 }
 
 .fc-header {
