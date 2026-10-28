@@ -899,3 +899,148 @@ body.fc .fc-form-links .fc-help-link {
     grid-column: 2;
   }
 }
+
+/* Refined card rhythm and reusable line icons. */
+.fc-page-hero + .fc-section {
+  padding-top: clamp(36px, 4vw, 56px);
+}
+
+.fc-page-hero + .fc-applications-section {
+  padding-top: 0;
+}
+
+.fc-grid-4 article,
+.fc-process article {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.fc-grid-4 article {
+  padding: 26px;
+}
+
+.fc-feature-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 22px;
+  border: 1px solid rgb(24 126 209 / 24%);
+  border-radius: 10px;
+  background: var(--fc-palette-light-blue);
+  color: var(--fc-palette-blue);
+  place-items: center;
+}
+
+.fc-feature-icon svg,
+.fc-table-heading svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fc-grid-4 article > span {
+  margin-bottom: 18px;
+}
+
+.fc-grid-4 h3,
+.fc-process h3 {
+  margin: 0 0 12px;
+}
+
+.fc-grid-4 p,
+.fc-process article p {
+  margin: 0;
+}
+
+.fc-process {
+  gap: 14px;
+  background: transparent;
+}
+
+.fc-process article {
+  padding: 28px;
+  border: 1px solid var(--fc-palette-border);
+  box-shadow: 0 12px 32px rgb(20 43 50 / 6%);
+}
+
+.fc-process-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.fc-process-top .fc-feature-icon {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.fc-process ul {
+  margin: 20px 0 0;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--fc-palette-border);
+  list-style: none;
+}
+
+.fc-process li {
+  position: relative;
+  margin: 9px 0;
+  padding-left: 18px;
+}
+
+.fc-process li::before {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--fc-palette-blue);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.fc-table-wrap {
+  border: 1px solid var(--fc-palette-border);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 42px rgb(20 43 50 / 7%);
+}
+
+.fc-table-caption {
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--fc-palette-border);
+  font-weight: 600;
+}
+
+.fc-table-heading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.fc-table-heading svg {
+  color: var(--fc-palette-blue);
+}
+
+@media (max-width: 700px) {
+  .fc-page-hero + .fc-section {
+    padding-top: 28px;
+  }
+
+  .fc-page-hero + .fc-applications-section {
+    padding-top: 0;
+  }
+
+  .fc-grid-4 article,
+  .fc-process article {
+    padding: 24px;
+  }
+}
