@@ -62,6 +62,8 @@ body.fc, body.fc button, body.fc input, body.fc select, body.fc textarea { font-
 .fc-cta-band h2 { max-width: 850px; font-size: clamp(34px, 4vw, 48px); font-weight: 500; line-height: 1.18; letter-spacing: -.04em; }
 .fc-page-hero { max-width: 1180px; margin: auto; padding: 100px 0 80px; }
 .fc-page-hero h1 { font-size: clamp(42px, 5.5vw, 76px); line-height: 1.02; }
+body.fc .fc-page-hero > a.fc-back-link { margin-bottom: 56px; }
+.fc-page-hero > .fc-kicker { margin-bottom: 24px; }
 .fc-process { gap: 16px; }
 .fc-process article { min-height: 330px; padding: 30px; border-radius: 12px; }
 .fc-contact { grid-template-columns: 0.75fr 1fr; }
