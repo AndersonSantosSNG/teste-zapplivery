@@ -201,9 +201,9 @@ body.fc {
 }
 
 .fc-nav .fc-cta {
-  background: transparent;
-  color: var(--fc-palette-navy) !important;
-  border: 1px solid #a9c5d8;
+  background: var(--fc-palette-pink);
+  color: #fff !important;
+  border: 1px solid var(--fc-palette-pink);
 }
 
 .fc-cta,
