@@ -235,6 +235,11 @@ body.fc {
   color: var(--fc-palette-navy);
 }
 
+.fc-photo-copy,
+.fc-photo-copy h2 {
+  color: #fff;
+}
+
 .fc h1 em,
 .fc .fc-system-copy h2 em {
   color: var(--fc-palette-blue);
