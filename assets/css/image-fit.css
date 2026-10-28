@@ -1,0 +1,8 @@
+.fc-system-visual .fc-screen img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}

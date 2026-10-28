@@ -1,0 +1,18 @@
+.footer-sng-mini {
+  display: none;
+}
+.footer-brand-row {
+  gap: 0;
+}
+.footer-sng-mark {
+  margin: 10px 0;
+}
+.footer-sng-mark img {
+  display: block;
+  width: min(100%, 150px);
+  height: auto;
+  object-fit: contain;
+}
+.footer-company-card .footer-sng-mark img {
+  filter: none;
+}

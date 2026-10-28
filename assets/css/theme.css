@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700;800&display=swap");
+body.fc,
+body.fc button,
+body.fc input,
+body.fc select,
+body.fc textarea {
+  font-family: "Saira", Arial, sans-serif;
+}
+.fc h1,
+.fc h2 {
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+.fc h3 {
+  font-weight: 600;
+}
+.fc-lead,
+.fc-copy {
+  font-weight: 400;
+}
+.fc-chips span,
+.fc-dark .fc-chips span {
+  background: #fff;
+  color: #142c32 !important;
+  border-color: #d2dbd7;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+}
+.fc-dark .fc-kicker {
+  color: #8aa39f;
+}
+.fc-dark .fc-grid-4 article {
+  background: #fff;
+  color: #142c32;
+}
+.fc-dark .fc-grid-4 article p {
+  color: #596e71;
+}

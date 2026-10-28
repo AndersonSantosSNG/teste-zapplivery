@@ -1,0 +1,22 @@
+.fc-logo {
+  display: block;
+  width: 154px;
+  height: 48px;
+  font-size: 0 !important;
+  line-height: 0;
+  background: url("../images/logo-zapplivery.png") center/contain no-repeat;
+  flex: 0 0 auto;
+}
+.fc-footer .fc-logo {
+  width: 190px;
+  height: 58px;
+}
+@media (max-width: 620px) {
+  .fc-logo {
+    width: 132px;
+    height: 42px;
+  }
+  .fc-footer .fc-logo {
+    width: 165px;
+  }
+}

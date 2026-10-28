@@ -1,0 +1,72 @@
+/* Somente tipografia, formas, proporcoes e espacamentos seguem o FontCash. */
+body.fc, body.fc button, body.fc input, body.fc select, body.fc textarea { font-family: "Saira", Arial, Helvetica, sans-serif; }
+.fc-header { position: relative; height: 82px; padding: 0 max(24px, calc((100vw - 1180px) / 2)); }
+.fc-header .fc-logo { width: 205px; height: 58px; }
+.fc-nav { gap: 28px; font-size: 14px; font-weight: 600; }
+.fc-nav .fc-cta { padding: 11px 18px; font-size: 13px; }
+.fc-nav .fc-cta, .fc-cta, .fc-button { display: inline-flex; align-items: center; justify-content: center; border-radius: 7px; font-weight: 700; }
+.fc-cta, .fc-button { padding: 15px 23px; font-size: 15px; }
+.fc h1 { font-weight: 800; letter-spacing: -.055em; }
+.fc h2 { font-weight: 500; letter-spacing: -.045em; }
+.fc h3 { font-weight: 600; }
+.fc-kicker { margin-bottom: 18px; font-size: 11px; font-weight: 700; letter-spacing: .16em; }
+.fc-lead, .fc-copy { font-size: 18px; line-height: 1.6; }
+.fc-hero { min-height: 680px; padding: 68px max(24px, calc((100vw - 1180px) / 2)) 48px; grid-template-columns: 1.03fr .97fr; gap: 80px; }
+.fc-hero h1 { margin-bottom: 25px; font-size: clamp(42px, 5vw, 68px); line-height: 1.02; }
+.fc-actions { gap: 20px; margin-top: 34px; }
+.fc-flow { min-height: 550px; padding: 24px 30px; border-radius: 12px; display: flex; flex-direction: column; }
+.fc-flow-head { padding-bottom: 21px; }
+.fc-flow-item { min-height: 148px; padding: 22px 0; flex: 1; }
+.fc-flow-item:last-child { border-bottom: 0; }
+.fc-strip { padding-inline: max(24px, calc((100vw - 1180px) / 2)); }
+.fc-strip div { padding: 38px 25px; }
+.fc-strip div:first-child { padding-left: 0; }
+.fc-strip b { font-size: 27px; }
+.fc-section { padding: clamp(80px, 8vw, 120px) max(24px, calc((100vw - 1180px) / 2)); }
+.fc-intro { max-width: 850px; margin-bottom: 60px; }
+.fc h2 { font-size: clamp(35px, 4.5vw, 58px); line-height: 1.04; }
+.fc-grid-4 { gap: 16px; border: 0; }
+.fc-grid-4 article, .fc-dark .fc-grid-4 article { min-height: 220px; padding: 28px; border-radius: 12px; }
+.fc-grid-4 h3 { margin: 42px 0 13px; }
+.fc-cards { gap: 16px; }
+.fc-card { min-height: 300px; padding: 30px; border-radius: 12px; }
+.fc-card h3 { margin: 48px 0 18px; }
+.fc-system-layout { grid-template-columns: 1.35fr .85fr; gap: 80px; }
+.fc-system-visual .fc-screen { border-radius: 12px; }
+.fc .fc-system-copy h2 { font-size: clamp(38px, 4.2vw, 58px); font-weight: 500; line-height: 1.12; letter-spacing: -.045em; }
+.fc .fc-system-copy > b { font-weight: 700; }
+.fc-tabs-row .fc-tab { min-height: 52px; padding: 13px 15px; border-radius: 9px; font-weight: 600; }
+.fc-tabs-row .fc-tab small { font-weight: 700; }
+.fc-cta-band { padding: 70px max(24px, calc((100vw - 1180px) / 2)); }
+.fc-cta-band h2 { max-width: 850px; font-size: clamp(34px, 4vw, 48px); font-weight: 500; line-height: 1.18; letter-spacing: -.04em; }
+.fc-page-hero { max-width: 1180px; margin: auto; padding: 100px 0 80px; }
+.fc-page-hero h1 { font-size: clamp(42px, 5.5vw, 76px); line-height: 1.02; }
+.fc-process { gap: 16px; }
+.fc-process article { min-height: 330px; padding: 30px; border-radius: 12px; }
+.fc-contact { grid-template-columns: 1fr 1fr; }
+.fc-photo { min-height: 780px; }
+.fc-form { padding: 70px max(40px, calc((50vw - 590px) + 40px)); }
+.footer-shell { padding-inline: max(24px, calc((100vw - 1180px) / 2)); }
+@media (max-width: 1228px) { .fc-page-hero { padding-inline: 24px; } }
+@media (max-width: 980px) {
+  .fc-header { position: sticky; }
+  .fc-nav { top: 82px; padding: 25px; }
+  .fc-hero, .fc-system-layout, .fc-contact { grid-template-columns: 1fr; }
+  .fc-hero { min-height: auto; gap: 55px; padding-block: 70px; }
+  .fc-flow { max-width: 660px; }
+  .fc-strip, .fc-grid-4, .fc-process { grid-template-columns: repeat(2, 1fr); }
+  .fc-photo { min-height: 600px; }
+}
+@media (max-width: 620px) {
+  .fc-header { height: 70px; }
+  .fc-header .fc-logo { width: 150px; height: 46px; }
+  .fc-nav { top: 70px; }
+  .fc-hero { padding-top: 60px; padding-bottom: 65px; }
+  .fc h1 { font-size: 44px; }
+  .fc-strip, .fc-grid-4, .fc-process { grid-template-columns: 1fr; }
+  .fc-strip div:first-child { padding-left: 25px; }
+  .fc-section { padding-block: 75px; }
+  .fc-form { padding: 55px 24px; }
+  .fc-flow { min-height: auto; padding: 22px; }
+  .fc-flow-item { min-height: 0; }
+}
