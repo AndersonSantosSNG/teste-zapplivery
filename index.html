@@ -17,7 +17,7 @@
   <body class="fc">
     <header class="fc-header">
       <a class="fc-logo" href="index.html">zapplivery</a
-      ><button class="fc-menu">Menu</button>
+      ><button class="fc-menu" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="fc-nav">
         <a href="solucoes.html">Soluções</a
         ><a href="como-funciona.html">Como funciona</a
@@ -83,13 +83,21 @@
         <div><b>360°</b><span>Visibilidade operacional</span></div>
       </section>
       <section class="fc-section">
-        <div class="fc-intro">
-          <p class="fc-kicker">Onde a operação perde</p>
-          <h2>A visibilidade não pode terminar no portão.</h2>
-          <p class="fc-copy">
-            Quando a atividade acontece na rua, no cliente ou no caminho até sua
-            unidade, os sistemas internos deixam de responder perguntas básicas.
-          </p>
+        <div class="fc-context-intro">
+          <div class="fc-intro">
+            <p class="fc-kicker">Onde a operação perde</p>
+            <h2>A visibilidade não pode terminar no portão.</h2>
+            <p class="fc-copy">
+              Quando a atividade acontece na rua, no cliente ou no caminho até sua
+              unidade, os sistemas internos deixam de responder perguntas básicas.
+            </p>
+          </div>
+          <img
+            class="fc-context-drawing"
+            src="assets/images/drawing.jpeg"
+            alt="Ilustração de entregas e serviços em campo acompanhados por aplicativo"
+            loading="lazy"
+          />
         </div>
         <div class="fc-grid-4">
           <article>
@@ -171,7 +179,7 @@
           </div>
         </div>
       </section>
-      <section class="fc-section">
+      <section class="fc-section fc-delivery-section">
         <div class="fc-intro">
           <p class="fc-kicker">Uma plataforma. Três jornadas.</p>
           <h2>Encontre o ponto que precisa deixar um rastro.</h2>

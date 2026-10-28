@@ -38,8 +38,8 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .fc-hero {
-  min-height: calc(100svh - 86px);
-  min-height: calc(100dvh - 86px);
+  min-height: calc(100svh - 82px);
+  min-height: calc(100dvh - 82px);
 }
 
 @media (min-width: 981px) {
@@ -74,8 +74,8 @@ html::-webkit-scrollbar-thumb:hover {
   }
 
   .fc-contact {
-    min-height: calc(100svh - 86px);
-    min-height: calc(100dvh - 86px);
+    min-height: calc(100svh - 82px);
+    min-height: calc(100dvh - 82px);
     align-items: stretch;
   }
 
