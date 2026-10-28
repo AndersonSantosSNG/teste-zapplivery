@@ -1,4 +1,16 @@
 /* Somente tipografia, formas, proporcoes e espacamentos seguem o FontCash. */
+body.fc,
+body.fc * {
+  -webkit-user-select: none;
+  user-select: none;
+}
+body.fc input,
+body.fc textarea,
+body.fc select,
+body.fc [contenteditable="true"] {
+  -webkit-user-select: text;
+  user-select: text;
+}
 body.fc, body.fc button, body.fc input, body.fc select, body.fc textarea { font-family: "Saira", Arial, Helvetica, sans-serif; }
 .fc-header { position: relative; height: 82px; padding: 0 max(24px, calc((100vw - 1180px) / 2)); }
 .fc-header .fc-logo { width: 205px; height: 58px; }
