@@ -838,3 +838,64 @@ body.fc .fc-form-links .fc-help-link {
     font-size: 12px;
   }
 }
+
+/* Keep the composition content-led: viewport height must not create empty space. */
+.fc-hero,
+.fc-contact,
+.fc-contact .fc-form {
+  min-height: auto;
+}
+
+@media (max-width: 980px) {
+  .fc-hero,
+  .fc-contact .fc-photo,
+  .fc-contact .fc-form {
+    min-height: auto;
+  }
+
+  .fc-hero > *,
+  .fc-system-layout > *,
+  .fc-contact > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .fc-flow {
+    width: 100%;
+  }
+
+  .fc-contact .fc-photo {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 620px) {
+  .fc-hero,
+  .fc-contact .fc-photo,
+  .fc-contact .fc-form {
+    min-height: auto;
+  }
+
+  .fc-contact .fc-photo {
+    aspect-ratio: 1 / 1;
+  }
+
+  .fc-hero h1,
+  .fc-hero .fc-lead,
+  .fc-flow-head,
+  .fc-flow-item {
+    overflow-wrap: anywhere;
+  }
+
+  .fc-flow-head {
+    gap: 16px;
+  }
+
+  .fc-flow-item {
+    grid-template-columns: 14px minmax(0, 1fr);
+  }
+
+  .fc-flow-item mark {
+    grid-column: 2;
+  }
+}
